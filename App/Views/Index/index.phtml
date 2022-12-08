@@ -1,0 +1,13 @@
+<h1>Home</h1>
+
+<?php
+
+echo'<pre>';
+print_r($this->view->dados);
+echo'</pre>';
+
+foreach ( $this->view->dados as $indice => $produto){
+    echo 'Id do produto: '.$produto['id'].'<br>Descrição: '.$produto['descricao'].'<br>Preço: '.$produto['preco'].'<hr>';
+} 
+
+?>
