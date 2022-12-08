@@ -6,10 +6,9 @@ use MF\Init\Bootstrap;
 
 class Route extends Bootstrap {               //Class route vai cuidar das rotas
 
-
 	protected function initRoutes() { //Constructor get e set foi para o Bootstrap, esses metodos continuam aqui pois são requisitos e metodos funcionais
 
-		$routes['home'] = array(              //cria um array pra cada rota, ou seja, pra cada página
+		$routes['home'] = array(              //cria um array pra cada rota
 			'route' => '/',
 			'controller' => 'indexController',
 			'action' => 'index'
